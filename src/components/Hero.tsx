@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Camera, Sparkles, Award } from "lucide-react";
+import heroBackground from "@/assets/hero-background.jpg";
 
 const Hero = () => {
   return (
@@ -7,11 +8,15 @@ const Hero = () => {
       id="hero"
       className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
     >
-      <div className="absolute inset-0 bg-gradient-to-br from-primary via-primary-light to-accent opacity-95" />
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackground})` }}
+      />
+      <div className="absolute inset-0 bg-gradient-to-br from-primary/80 via-primary-light/70 to-accent/60" />
       
       <div className="absolute inset-0">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-white/10 rounded-full blur-3xl animate-pulse" />
-        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-pulse delay-1000" />
+        <div className="absolute top-20 left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl animate-pulse" />
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-pulse delay-1000" />
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
