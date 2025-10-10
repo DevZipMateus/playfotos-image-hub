@@ -21,10 +21,10 @@ const Testimonials = () => {
     <section className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Depoimentos
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white/90">
             Veja o que nossos clientes dizem sobre nosso trabalho
           </p>
         </div>
@@ -33,18 +33,18 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="border-2 hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-white"
+              className="border-2 border-card hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card"
             >
               <CardContent className="p-8">
                 <div className="flex gap-1 mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-primary text-primary" />
+                    <Star key={i} className="w-5 h-5 fill-primary-light text-primary-light" />
                   ))}
                 </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed italic">
+                <p className="text-white/80 mb-6 leading-relaxed italic">
                   "{testimonial.text}"
                 </p>
-                <p className="font-semibold text-foreground">{testimonial.name}</p>
+                <p className="font-semibold text-white">{testimonial.name}</p>
               </CardContent>
             </Card>
           ))}

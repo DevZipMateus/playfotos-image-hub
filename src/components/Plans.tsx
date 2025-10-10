@@ -39,10 +39,10 @@ const Plans = () => {
     <section id="planos" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Planos especializados
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white/90">
             Oferecemos serviços técnicos especializados para garantir que seus projetos visuais 
             sejam executados com perfeição e profissionalismo.
           </p>
@@ -52,16 +52,16 @@ const Plans = () => {
           {plans.map((plan, index) => (
             <Card
               key={index}
-              className="border-2 hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group"
+              className="border-2 border-card hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group bg-card"
             >
               <CardHeader>
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <plan.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/20 mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                  <plan.icon className="w-7 h-7 text-primary-light group-hover:text-white transition-colors" />
                 </div>
-                <CardTitle className="text-xl text-foreground">{plan.title}</CardTitle>
+                <CardTitle className="text-xl text-white">{plan.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{plan.description}</p>
+                <p className="text-white/80">{plan.description}</p>
               </CardContent>
             </Card>
           ))}

@@ -39,10 +39,10 @@ const Products = () => {
     <section id="produtos" className="py-20 bg-secondary/50">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Produtos
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white/90">
             Transformamos suas fotos em produtos únicos e memoráveis, perfeitos para presentear 
             ou decorar seus ambientes favoritos.
           </p>
@@ -52,16 +52,16 @@ const Products = () => {
           {products.map((product, index) => (
             <Card
               key={index}
-              className="border-2 hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group bg-white"
+              className="border-2 border-card hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group bg-card"
             >
               <CardHeader>
-                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/10 mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
-                  <product.icon className="w-7 h-7 text-primary group-hover:text-white transition-colors" />
+                <div className="inline-flex items-center justify-center w-14 h-14 rounded-xl bg-primary/20 mb-4 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
+                  <product.icon className="w-7 h-7 text-primary-light group-hover:text-white transition-colors" />
                 </div>
-                <CardTitle className="text-xl text-foreground">{product.title}</CardTitle>
+                <CardTitle className="text-xl text-white">{product.title}</CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">{product.description}</p>
+                <p className="text-white/80">{product.description}</p>
               </CardContent>
             </Card>
           ))}

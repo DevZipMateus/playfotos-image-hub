@@ -34,10 +34,10 @@ const Contact = () => {
     <section id="contato" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-foreground">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
             Entre em contato
           </h2>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-white/90">
             Estamos prontos para transformar seus momentos em memórias inesquecíveis
           </p>
         </div>
@@ -46,27 +46,27 @@ const Contact = () => {
           {contactInfo.map((info, index) => (
             <Card
               key={index}
-              className="border-2 hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="border-2 border-card hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card"
             >
               <CardContent className="p-6 text-center">
-                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
-                  <info.icon className="w-6 h-6 text-primary" />
+                <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/20 mb-4">
+                  <info.icon className="w-6 h-6 text-primary-light" />
                 </div>
-                <h3 className="font-semibold mb-2 text-foreground">{info.title}</h3>
+                <h3 className="font-semibold mb-2 text-white">{info.title}</h3>
                 {info.link ? (
                   <a
                     href={info.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-muted-foreground hover:text-primary transition-colors"
+                    className="text-white/80 hover:text-primary-light transition-colors"
                   >
                     {info.content}
                   </a>
                 ) : (
-                  <p className="text-muted-foreground">{info.content}</p>
+                  <p className="text-white/80">{info.content}</p>
                 )}
                 {info.subtitle && (
-                  <p className="text-sm text-muted-foreground mt-1">{info.subtitle}</p>
+                  <p className="text-sm text-white/70 mt-1">{info.subtitle}</p>
                 )}
               </CardContent>
             </Card>
@@ -123,7 +123,7 @@ const Contact = () => {
         </div>
 
         <div className="max-w-4xl mx-auto">
-          <Card className="border-2 overflow-hidden">
+          <Card className="border-2 border-card overflow-hidden bg-card">
             <CardContent className="p-0">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.123456789!2d-45.123456!3d-4.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDcnMjQuNCJTIDQ1wrAwNycyNC40Ilc!5e0!3m2!1spt-BR!2sbr!4v1234567890"
