@@ -44,14 +44,14 @@ const Header = () => {
     id: "contato"
   }];
   return <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-secondary/95 backdrop-blur-md shadow-md" : "bg-secondary"}`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-between h-16 sm:h-20">
           <div className="flex items-center">
-            <img src={logo} alt="PLAYFOTOS" className="h-36 w-auto" />
+            <img src={logo} alt="PLAYFOTOS" className="h-20 sm:h-28 md:h-32 lg:h-36 w-auto" />
           </div>
 
-          <nav className="hidden md:flex items-center gap-8">
-            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-white hover:text-primary-light font-medium transition-colors relative group">
+          <nav className="hidden md:flex items-center gap-4 lg:gap-8">
+            {navItems.map(item => <button key={item.id} onClick={() => scrollToSection(item.id)} className="text-white hover:text-primary-light font-medium transition-colors relative group text-sm lg:text-base">
                 {item.label}
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary-light transition-all duration-300 group-hover:w-full" />
               </button>)}

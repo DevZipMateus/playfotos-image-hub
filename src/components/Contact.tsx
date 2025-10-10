@@ -31,18 +31,18 @@ const Contact = () => {
   ];
 
   return (
-    <section id="contato" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+    <section id="contato" className="py-12 sm:py-16 md:py-20 bg-background">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white">
             Entre em contato
           </h2>
-          <p className="text-lg text-white/90">
+          <p className="text-base sm:text-lg text-white/90">
             Estamos prontos para transformar seus momentos em memórias inesquecíveis
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 max-w-6xl mx-auto mb-8 sm:mb-12">
           {contactInfo.map((info, index) => (
             <Card
               key={index}
@@ -73,18 +73,18 @@ const Contact = () => {
           ))}
         </div>
 
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex flex-col sm:flex-row justify-center gap-3 sm:gap-4 mb-8 sm:mb-12 max-w-2xl mx-auto">
           <Button
             size="lg"
             asChild
-            className="bg-primary hover:bg-primary-light shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            className="bg-primary hover:bg-primary-light shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
           >
             <a
               href="https://wa.me/5598984971655"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Phone className="mr-2 h-5 w-5" />
+              <Phone className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               WhatsApp
             </a>
           </Button>
@@ -93,14 +93,14 @@ const Contact = () => {
             size="lg"
             variant="outline"
             asChild
-            className="border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            className="border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
           >
             <a
               href="https://www.instagram.com/oficialplayfotos/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Instagram className="mr-2 h-5 w-5" />
+              <Instagram className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Instagram
             </a>
           </Button>
@@ -109,14 +109,14 @@ const Contact = () => {
             size="lg"
             variant="outline"
             asChild
-            className="border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
+            className="border-2 border-primary text-primary hover:bg-primary hover:text-white shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full sm:w-auto"
           >
             <a
               href="https://www.facebook.com/PlayFotos/?locale=pt_BR"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Facebook className="mr-2 h-5 w-5" />
+              <Facebook className="mr-2 h-4 w-4 sm:h-5 sm:w-5" />
               Facebook
             </a>
           </Button>
@@ -128,7 +128,8 @@ const Contact = () => {
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.123456789!2d-45.123456!3d-4.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNMKwMDcnMjQuNCJTIDQ1wrAwNycyNC40Ilc!5e0!3m2!1spt-BR!2sbr!4v1234567890"
                 width="100%"
-                height="400"
+                height="300"
+                className="sm:h-[400px]"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"

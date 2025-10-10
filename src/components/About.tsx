@@ -24,13 +24,13 @@ const About = () => {
   ];
 
   return (
-    <section id="sobre" className="py-20 bg-secondary/50">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl mx-auto text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">
+    <section id="sobre" className="py-12 sm:py-16 md:py-20 bg-secondary/50">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl mx-auto text-center mb-12 sm:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 sm:mb-6 text-white">
             Sobre nós
           </h2>
-          <p className="text-lg text-white/90 leading-relaxed">
+          <p className="text-base sm:text-lg text-white/90 leading-relaxed">
             Começamos nossa loja em 2005 com uma visão clara: levar aos nossos clientes produtos e 
             serviços com o mais alto padrão de qualidade e total garantia. Desde o início, nosso objetivo 
             foi oferecer soluções que realmente fizessem a diferença, proporcionando experiências que 
@@ -45,17 +45,17 @@ const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {values.map((value, index) => (
             <Card
               key={index}
               className="border-2 border-card hover:border-primary hover:shadow-xl transition-all duration-300 hover:-translate-y-2 bg-card"
             >
-              <CardContent className="p-8 text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/20 mb-6">
-                  <value.icon className="w-8 h-8 text-primary-light" />
+              <CardContent className="p-6 sm:p-8 text-center">
+                <div className="inline-flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-primary/20 mb-4 sm:mb-6">
+                  <value.icon className="w-7 h-7 sm:w-8 sm:h-8 text-primary-light" />
                 </div>
-                <h3 className="text-2xl font-bold mb-4 text-white">{value.title}</h3>
+                <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 text-white">{value.title}</h3>
                 <p className="text-white/80 leading-relaxed">
                   {value.description}
                 </p>
