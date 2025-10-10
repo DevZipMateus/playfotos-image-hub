@@ -20,7 +20,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
-        <div className="max-w-4xl mx-auto text-center text-white">
+        <div className="max-w-4xl mx-auto text-center text-white bg-black/20 backdrop-blur-sm rounded-3xl p-8 md:p-12">
           <div className="flex justify-center gap-4 mb-6 flex-wrap">
             <div className="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
               <Camera className="w-5 h-5" />
