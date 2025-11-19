@@ -9,6 +9,7 @@ const Gallery = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const photos = [
+    "/fotos/WhatsApp Image 2025-10-24 at 08.57.43.jpeg",
     "/fotos/01.jpg",
     "/fotos/03.jpg",
     "/fotos/DSC_0185.jpg",
@@ -20,7 +21,6 @@ const Gallery = () => {
     "/fotos/WhatsApp Image 2025-10-24 at 08.57.41 (1).jpeg",
     "/fotos/WhatsApp Image 2025-10-24 at 08.57.42.jpeg",
     "/fotos/WhatsApp Image 2025-10-24 at 08.57.42 (1).jpeg",
-    "/fotos/WhatsApp Image 2025-10-24 at 08.57.43.jpeg",
     "/fotos/WhatsApp Image 2025-10-24 at 08.57.44.jpeg",
     "/fotos/WhatsApp Image 2025-10-24 at 08.57.44 (1).jpeg",
     "/fotos/WhatsApp Image 2025-10-24 at 08.57.45.jpeg",
