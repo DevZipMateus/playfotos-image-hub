@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Products from "@/components/Products";
 import Plans from "@/components/Plans";
 import Testimonials from "@/components/Testimonials";
+import Gallery from "@/components/Gallery";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
         <Products />
         <Plans />
         <Testimonials />
+        <Gallery />
         <Contact />
       </main>
     </div>
