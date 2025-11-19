@@ -16,15 +16,15 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Contato</h3>
             <div className="space-y-3">
               <a href="tel:+5511999999999" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-                <Phone className="h-4 w-4" />
+                <Phone className="h-4 w-4 shrink-0" />
                 <span>(11) 99999-9999</span>
               </a>
               <a href="mailto:contato@exemplo.com" className="flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors">
-                <Mail className="h-4 w-4" />
-                <span>contato@exemplo.com</span>
+                <Mail className="h-4 w-4 shrink-0" />
+                <span className="break-all">contato@exemplo.com</span>
               </a>
               <div className="flex items-center gap-2 text-muted-foreground">
-                <MapPin className="h-4 w-4" />
+                <MapPin className="h-4 w-4 shrink-0" />
                 <span>São Paulo, SP</span>
               </div>
             </div>
